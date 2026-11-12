@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summary</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .summary {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      box-sizing: border-box;
+    }
+
+    .summary h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0 0 20px;
+      text-transform: lowercase;
+    }
+
+    .summary .coupon-code {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .summary input[type="text"] {
+      width: 60%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .summary a {
+      color: #6f2dff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .summary a:hover {
+      text-decoration: underline;
+    }
+
+    .summary .details {
+      margin: 10px 0;
+    }
+
+    .summary .details span {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .summary .details span.total {
+      font-weight: bold;
+    }
+
+    .summary .grand-total {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 20px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .summary button {
+      width: 100%;
+      background: #6f2dff;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .summary button:hover {
+      background: #5c23d1;
+    }
+  </style>
+</head>
+<body>
+  <div class="summary">
+    <h2>summary</h2>
+    <div class="coupon-code">
+      <input type="text" placeholder="0000">
+      <a href="#">+ add</a>
+    </div>
+    <div class="details">
+      <span>subtotal <span>&pound;14.00</span></span>
+      <span>other processing fee <span>&pound;2.00</span></span>
+      <span>est taxes <span>&mdash;</span></span>
+      <span class="total">total <span>&pound;16.00</span></span>
+    </div>
+    <div class="grand-total">
+      <span>grand total</span>
+      <span>&pound;16.00</span>
+    </div>
+    <button>proceed to checkout</button>
+  </div>
+</body>
+</html>

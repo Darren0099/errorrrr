@@ -1,0 +1,5 @@
+{
+    "require": {
+        "dana-id/php_client": "1.*"
+    }
+}
